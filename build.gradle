@@ -27,9 +27,9 @@ dependencies {
 	annotationProcessor 'org.projectlombok:lombok:1.18.16'
 }
 
-group = 'io.github.kattlo.cloudevents'
-version = '1.0.0'
-description = 'CloudEvent Apache Kafka® Avro Serializer'
+group = 'io.github.kattlo'
+version = '0.9.0'
+description = 'CloudEvent Apache Kafka® - Avro™ Serializer'
 
 java.sourceCompatibility = JavaVersion.VERSION_11
 
