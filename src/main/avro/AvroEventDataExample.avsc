@@ -1,0 +1,21 @@
+{
+    "namespace":"org.acme",
+    "name":"AvroEventDataExample",
+    "type":"record",
+    "version":"1.0.0",
+    "doc":"My data description",
+    "fields":[
+        {
+            "name":"code",
+            "type":"long"
+        },
+        {
+            "name":"name",
+            "type":"string"
+        },
+        {
+            "name":"description",
+            "type":"string"
+        }
+    ]
+}
