@@ -7,6 +7,7 @@ import org.apache.kafka.common.header.Headers;
 
 import io.cloudevents.CloudEvent;
 import io.cloudevents.core.builder.CloudEventBuilder;
+import io.cloudevents.core.message.Encoding;
 import io.cloudevents.kafka.CloudEventDeserializer;
 import io.confluent.kafka.schemaregistry.client.SchemaRegistryClient;
 import io.confluent.kafka.serializers.KafkaAvroDeserializer;

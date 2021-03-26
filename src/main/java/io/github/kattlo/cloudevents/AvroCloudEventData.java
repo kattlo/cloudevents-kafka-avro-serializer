@@ -36,7 +36,7 @@ implements
     /**
      * Parse untyped data to typed one.
      *
-     * @param <T> The type of the typed data
+     * @param <V> The type of the typed data
      * @param data Instance of {@link AvroCloudEventData}
      * @return typed data
      */
