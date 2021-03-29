@@ -24,7 +24,7 @@ __Support__:
     }
 
     dependencies {
-	    testImplementation 'com.github.kattlo:cloudevents-kafka-avro-serializer:v0.10.0'
+	    implementation 'com.github.kattlo:cloudevents-kafka-avro-serializer:v0.10.0'
 	}
     ```
 
