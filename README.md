@@ -3,8 +3,6 @@
 Serialize and Deserialize [CloudEvents](https://cloudevents.io/) integrated
 with [Schema Registry](https://docs.confluent.io/platform/current/schema-registry/index.html).
 
-- 💡 [See examples](./examples)
-
 __Support__:
 
 - Java 11+
@@ -20,11 +18,17 @@ __Support__:
     ```groovy
     repositories {
         // ...
+
+        maven {
+            url = uri('http://packages.confluent.io/maven/')
+        }
+
         maven { url 'https://jitpack.io' }
+
     }
 
     dependencies {
-	    implementation 'com.github.kattlo:cloudevents-kafka-avro-serializer:v0.10.0'
+	    implementation 'com.github.kattlo:cloudevents-kafka-avro-serializer:v0.11.0'
 	}
     ```
 
@@ -40,7 +44,7 @@ __Support__:
 	<dependency>
 	    <groupId>com.github.kattlo</groupId>
 	    <artifactId>cloudevents-kafka-avro-serializer</artifactId>
-	    <version>v0.10.0</version>
+	    <version>v0.11.0</version>
 	</dependency>
     ```
 

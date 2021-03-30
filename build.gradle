@@ -28,7 +28,7 @@ dependencies {
 }
 
 group = 'io.github.kattlo'
-version = '0.9.0'
+version = '0.11.0'
 description = 'CloudEvent Apache Kafka® - Avro™ Serializer'
 
 java.sourceCompatibility = JavaVersion.VERSION_11
