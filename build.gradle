@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'io.confluent:kafka-avro-serializer:5.5.3'
+    implementation 'io.confluent:kafka-avro-serializer:6.2.0'
     implementation 'org.apache.avro:avro:1.10.2'
     implementation 'io.cloudevents:cloudevents-kafka:2.0.0'
 
