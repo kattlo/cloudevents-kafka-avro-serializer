@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
+import io.confluent.kafka.schemaregistry.avro.AvroSchema;
 import org.apache.kafka.common.errors.SerializationException;
 import org.apache.kafka.common.header.Headers;
 
@@ -70,7 +71,7 @@ public class KafkaAvroCloudEventSerializer extends KafkaAvroSerializer {
                 configs.get(KafkaAvroSerializerConfig.SCHEMA_REGISTRY_URL_CONFIG);
 
             log.debug("{}={}", KafkaAvroSerializerConfig.SCHEMA_REGISTRY_URL_CONFIG,
-                schemaRegistryUrl);;
+                schemaRegistryUrl);
 
         } else {
             throw new IllegalArgumentException(CloudEventSerializer.ENCODING_CONFIG + "=" + encoding + " not supported");
@@ -109,8 +110,7 @@ public class KafkaAvroCloudEventSerializer extends KafkaAvroSerializer {
 
             // get the versionId of registered schema
             try {
-                var versions = super.schemaRegistry.getAllVersions(subjectName);
-                var version = versions.get(versions.size() -1);
+                var version = super.schemaRegistry.getVersion(subjectName, new AvroSchema(value.getSchema()));
                 log.debug("Schema versionId {}", version);
 
                 var dataschema = schemaRegistryUrl + "/subjects/" + subjectName + "/versions/" + version + "/schema";
