@@ -147,7 +147,7 @@ public class KafkaAvroCloudEventSerializer extends KafkaAvroSerializer {
         }
 
         @Override
-        public boolean isBackwardCompatible(ParsedSchema arg0) {
+        public List<String> isBackwardCompatible(ParsedSchema arg0) {
             throw new UnsupportedOperationException();
         }
 
