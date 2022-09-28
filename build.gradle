@@ -1,5 +1,5 @@
 plugins {
-    id 'com.commercehub.gradle.plugin.avro' version '0.99.99'
+    id 'com.github.davidmc24.gradle.plugin.avro' version '1.5.0'
     id 'java'
     id 'java-library'
     id 'maven'
@@ -15,16 +15,16 @@ repositories {
 }
 
 dependencies {
-    implementation 'io.confluent:kafka-avro-serializer:5.5.3'
-    implementation 'org.apache.avro:avro:1.10.2'
-    implementation 'io.cloudevents:cloudevents-kafka:2.0.0'
+    implementation 'io.confluent:kafka-avro-serializer:7.2.1'
+    implementation 'org.apache.avro:avro:1.11.1'
+    implementation 'io.cloudevents:cloudevents-kafka:2.4.0'
 
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.1'
-    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.7.1'
-    testImplementation 'org.apache.kafka:kafka_2.12:2.7.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+    testImplementation 'org.apache.kafka:kafka_2.12:3.2.3'
 
-    compileOnly 'org.projectlombok:lombok:1.18.18'
-	annotationProcessor 'org.projectlombok:lombok:1.18.16'
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+	annotationProcessor 'org.projectlombok:lombok:1.18.24'
 }
 
 group = 'io.github.kattlo'
