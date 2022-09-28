@@ -23,8 +23,8 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
     testImplementation 'org.apache.kafka:kafka_2.12:2.7.0'
 
-    compileOnly 'org.projectlombok:lombok:1.18.18'
-	annotationProcessor 'org.projectlombok:lombok:1.18.16'
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+	annotationProcessor 'org.projectlombok:lombok:1.18.24'
 }
 
 group = 'io.github.kattlo'
