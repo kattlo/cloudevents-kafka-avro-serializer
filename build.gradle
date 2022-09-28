@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
     implementation 'io.confluent:kafka-avro-serializer:7.2.1'
-    implementation 'org.apache.avro:avro:1.10.2'
+    implementation 'org.apache.avro:avro:1.11.1'
     implementation 'io.cloudevents:cloudevents-kafka:2.0.0'
 
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.1'
